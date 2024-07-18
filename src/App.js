@@ -1,25 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { Provider, useSelector } from "react-redux";
+import store from "../src/components/store";
+import Table from "../src/components/Table";
+import Popup from "../src/components/Popup";
+import Carousel from "../src/components/Carousel";
+import Footer from "../src/components/Footer";
+import ThemeToggle from "../src/components/ThemeToggle";
+import "./styles.css";
 
-function App() {
+const App = () => {
+  const [showPopup, setShowPopup] = useState(false);
+  const theme = useSelector((state) => state.theme);
+
+  const handleAddScoreClick = () => {
+    setShowPopup(true);
+  };
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`app ${theme}`}>
+      <header className="leaderboard-header">LeaderBoard</header>
+      <div className="left-half">
+        <div className="upper-heading">
+          <button className="add-score-btn" onClick={handleAddScoreClick}>
+            Add Score
+          </button>
+          <ThemeToggle />
+        </div>
+        <Table />
+        {showPopup && <Popup onClose={handleClosePopup} />}
+      </div>
+      <div className="right-half">
+        <Carousel />
+      </div>
+      <Footer />
     </div>
   );
-}
+};
 
-export default App;
+const Root = () => (
+  <Provider store={store}>
+    <App />
+  </Provider>
+);
+
+export default Root;
