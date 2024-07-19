@@ -39,6 +39,7 @@
 }
 
 .toggle-button {
+  cursor: pointer;
   --b: 3px; /* border thickness */
   --s: 0.45em; /* size of the corner */
   --color: #373b44;
@@ -116,6 +117,7 @@
   width: 90%;
   background-image: url("https://wallpapers.com/images/hd/auto-racing-event-fih65wecklhr60q5.jpg");
   opacity: 0.8;
+  scroll-behavior: smooth;
 }
 
 .table-container table {
@@ -230,10 +232,7 @@
   top: -9px;
   right: 0px;
   left: 62%;
-  /* background-color: black; */
-  /* color: white; */
   cursor: pointer;
-  /* background: none; */
   border: none;
   outline: none;
   font-weight: bolder;
@@ -288,6 +287,24 @@
 
 .popup-content form button:hover {
   background-color: #80af81;
+}
+
+/* For scaling and dynamic scoll of new added user */
+/* Scale-up animation */
+@keyframes scale-up {
+  0% {
+  }
+  50% {
+    background-color: #eb5b00;
+    color: black;
+    font-weight: bolder;
+  }
+  100% {
+  }
+}
+
+.scale-up {
+  animation: scale-up 3s ease-in-out;
 }
 
 @keyframes popup-animation {

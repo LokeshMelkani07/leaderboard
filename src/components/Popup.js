@@ -10,7 +10,7 @@ const Popup = ({ onClose }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addUser({ id: Date.now(), username, score }));
+    dispatch(addUser({ id: Date.now(), username, score, newUser: true }));
     onClose();
   };
 
@@ -37,7 +37,7 @@ const Popup = ({ onClose }) => {
               value={score}
               onChange={(e) => setScore(e.target.value)}
               pattern="\d{2}:\d{2}:\d{3}"
-              placeholder="MM:SS:MS"
+              placeholder="(example 02:23:456)"
               required
             />
           </label>
