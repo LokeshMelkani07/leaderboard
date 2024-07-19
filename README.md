@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+This is a Assignment given by LazyIdli Software Team.
+Live Hosted Link: https://leaderboard-lokesh-assignment.netlify.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+App Contains:
 
-## Available Scripts
+1. User Table with Top 10 Entries Displayed Initially
+This has been implemented in the Table.js component where only the top 10 entries are initially displayed, but the user can scroll down to see all 50 entries.
 
-In the project directory, you can run:
+2. Add Score Button
+We have an Add Score button that opens a popup to add a new user with a score.
 
-### `npm start`
+3. Dynamic Scroll to New Entry
+The table dynamically scrolls to the new user's position using useRef.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+4. Redux for Adding Users
+Redux and userSlice have been implemented to manage the user state.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+5. Light/Dark Theme Using Redux
+Redux and themeSlice manage the light/dark theme.
 
-### `npm test`
+6. Animations Using Vanilla CSS
+All animations are done using Vanilla CSS.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+7. React Icons
+React Icons are used for icons.
 
-### `npm run build`
+8. Dummy Data of 50 Users
+Initial dummy data of 50 users is generated and sorted based on scores.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+9. Carousel with Automatic Image Change
+A carousel automatically changes images every 3 seconds using CSS.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+10. Footer with Animation
+A footer with an animation has been implemented.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Demo Video:
+https://github.com/user-attachments/assets/176469f3-cf0d-404d-91fd-197c189b48ce
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   
+   
